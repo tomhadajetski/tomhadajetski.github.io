@@ -23,7 +23,7 @@ jobs:
 
       - name: Inject Google Maps API key
         env:
-          MAPS_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+          MAPS_KEY: ${{ secrets.GOOGLE_MAPS_SECRET }}
         run: sed -i "s|%%GOOGLE_MAPS_API_KEY%%|${MAPS_KEY}|g" services.md
 
       - name: Setup Pages
