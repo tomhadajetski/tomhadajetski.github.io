@@ -2,17 +2,66 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!-- HERO -->
+<div class="hero">
+  <h1>Your Lawn, Looking Great.</h1>
+  <p class="hero-tagline">Reliable, affordable lawn care from your neighbor — done right, every time.</p>
+  <div class="hero-cta">
+    <a href="tel:+1XXXXXXXXXX" class="btn btn-green">📞 Call or Text</a>
+    <a href="mailto:hello@strongmower.com" class="btn btn-yellow">✉️ Email Us</a>
+  </div>
+</div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<!-- SERVICES PREVIEW -->
+<h2 class="section-title">What We Do</h2>
+<div class="service-cards">
+  <div class="service-card">
+    <span class="service-icon">🌿</span>
+    <h3>Lawn Mowing</h3>
+    <p>A clean, even cut every time — front yard, back yard, and everything in between.</p>
+  </div>
+  <div class="service-card">
+    <span class="service-icon">✂️</span>
+    <h3>Edging & Trimming</h3>
+    <p>Crisp edges along sidewalks, driveways, and garden beds for a polished look.</p>
+  </div>
+  <div class="service-card">
+    <span class="service-icon">💨</span>
+    <h3>Blowing & Cleanup</h3>
+    <p>Clippings cleared from walkways and driveways so your yard looks spotless.</p>
+  </div>
+  <div class="service-card">
+    <span class="service-icon">🍂</span>
+    <h3>Leaf Cleanup</h3>
+    <p>Seasonal leaf removal to keep your yard tidy all fall and spring long.</p>
+  </div>
+</div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+<!-- WHY HIRE ME -->
+<div class="why-section">
+  <h2>Why Hire Strong Mower?</h2>
+  <ul class="why-list">
+    <li class="why-item">
+      <span class="why-icon">🏠</span>
+      Local Kid
+    </li>
+    <li class="why-item">
+      <span class="why-icon">⭐</span>
+      Reliable &amp; Dependable
+    </li>
+    <li class="why-item">
+      <span class="why-icon">💰</span>
+      Affordable Prices
+    </li>
+    <li class="why-item">
+      <span class="why-icon">😊</span>
+      Friendly Service
+    </li>
+  </ul>
+</div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<!-- FOOTER CTA -->
+<div class="footer-cta">
+  <p>Ready to book? Get in touch today!</p>
+  <a href="/contact" class="btn btn-green">Contact Us →</a>
 </div>
