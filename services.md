@@ -49,6 +49,14 @@ Getting a great-looking lawn doesn't have to be complicated or expensive. Here's
     </div>
     <div class="service-price">Starting at $[XX]</div>
   </li>
+  <li>
+    <span class="service-emoji">💩</span>
+    <div class="service-details">
+      <strong>Dog Poop Cleanup</strong>
+      <span>We'll clear your yard of pet waste so it's clean, safe, and ready to enjoy.</span>
+    </div>
+    <div class="service-price">$[XX]</div>
+  </li>
 </ul>
 
 ---
