@@ -98,3 +98,42 @@ Not sure what size your yard is? No problem — just reach out and I'll give you
 <div style="text-align:center; margin-top: 30px;">
   <a href="/contact" class="btn btn-green">Get a Free Quote →</a>
 </div>
+
+---
+
+## Service Area
+
+I serve a **1-mile radius** around New Brighton, MN. Check the map below to see if I cover your neighborhood!
+
+<div id="service-area-map"></div>
+
+<script>
+  function initMap() {
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({ address: '198 3rd Ave SE, New Brighton, MN 55112' }, function(results, status) {
+      if (status === 'OK') {
+        var center = results[0].geometry.location;
+        var map = new google.maps.Map(document.getElementById('service-area-map'), {
+          center: center,
+          zoom: 13
+        });
+        new google.maps.Marker({
+          map: map,
+          position: center,
+          title: 'Strong Mower HQ'
+        });
+        new google.maps.Circle({
+          map: map,
+          center: center,
+          radius: 1609.34,
+          fillColor: '#27AE60',
+          fillOpacity: 0.15,
+          strokeColor: '#27AE60',
+          strokeOpacity: 0.9,
+          strokeWeight: 2
+        });
+      }
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=%%GOOGLE_MAPS_API_KEY%%&callback=initMap"></script>
